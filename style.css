@@ -1,0 +1,191 @@
+body {
+  box-sizing: border-box;
+  margin: auto 10;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.a {
+  margin: auto 10;
+}
+.links {
+  word-spacing: 10px;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1em;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+  cursor: pointer;
+  color: #fff;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-areas: "headline" "welcome" "sidebar" "box-1" "box-2" "box-3" "box-4" "copyright";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.5em;
+    padding: 0;
+    z-index: 2;
+  }
+}
+
+.push {
+  margin-left: auto;
+}
+.headline {
+  grid-area: headline;
+  text-align: center;
+}
+
+li {
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-areas: "headline headline headline headline" "welcome welcome welcome sidebar" "box-1 box-2 box-3 box-4" "copyright copyright copyright copyright";
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}
+
+.grid-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.welcome {
+  grid-area: welcome;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 10rm;
+  border: 1px #ccc solid;
+  padding: 0.5rem;
+}
+
+.box-photo1 > img {
+  width: 85px;
+  height: 100px;
+  position: center;
+  border: 1px #ccc solid;
+  padding: 0.5rem;
+}
+
+.box-photo1 {
+  background-color: #44444489;
+  margin: 2.5px 2.5px;
+  border: 1px #ccc solid;
+  padding: 2.5px;
+  background-color: #5fc4e3;
+  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.box-photo2 > img {
+  width: 90%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.box-photo3 > img {
+  width: 90%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  position: center;
+  cursor: pointer;
+  color: #f1f1f1;
+  font-size: 2em;
+  border-radius: 4px;
+  margin: auto;
+  transition: all 0.3s linear;
+}
+
+.box-photo4 > img {
+  width: 83%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.me {
+  width: 100%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  position: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+}
+
+.zone:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+.nav-bar {
+  background: #70e6e2;
+  background: -moz-linear-gradient(top, #70e1e1 0%, #77e3e7 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #72b8db),
+    color-stop(100%, #beedf2)
+  );
+  background: -webkit-linear-gradient(top, #73d2ec 0%, #b1e3ee 100%);
+  background: -o-linear-gradient(
+    top,
+    hsl(195, 82%, 67%) 0%,
+    hsl(192, 90%, 88%) 100%
+  );
+  background: -ms-linear-gradient(top, #59b2ff 0%, #beebf6 100%);
+  background: linear-gradient(top, #51aae9 0%, #b9eaf6 100%);
+}
+
+.copyright {
+  border: 1px #ccc solid;
+  padding: 0.5rem;
+  grid-area: copyright;
+  text-align: center;
+}
