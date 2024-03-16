@@ -46,6 +46,8 @@ body {
 .headline {
   grid-area: headline;
   text-align: center;
+  position: relative;
+  bottom: 550px;
 }
 
 li {
@@ -74,7 +76,8 @@ li {
   grid-area: welcome;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  position: relative;
+  bottom: 1125px;
 }
 
 .sidebar {
@@ -82,6 +85,8 @@ li {
   height: 10rm;
   border: 1px #ccc solid;
   padding: 0.5rem;
+  position: relative;
+  bottom: 1125px;
 }
 
 .box-photo1 > img {
@@ -97,6 +102,10 @@ li {
   margin: 2.5px 2.5px;
   border: 1px #ccc solid;
   padding: 2.5px;
+  position: relative;
+  left: 0px;
+  bottom: -40px;
+  z-index: 4;
   background-color: #5fc4e3;
   background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -111,6 +120,8 @@ li {
   margin: auto;
   border-radius: 4px;
   transition: all 0.3s linear;
+  position: relative;
+  bottom: 5px;
 }
 .box-photo3 > img {
   width: 90%;
@@ -123,10 +134,47 @@ li {
   border-radius: 4px;
   margin: auto;
   transition: all 0.3s linear;
+  position: relative;
+  bottom: 5px;
 }
 
 .box-photo4 > img {
   width: 83%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+  position: relative;
+  bottom: 5px;
+}
+.box-photo5 > img {
+  width: 90%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.box-photo6 > img {
+  width: 90%;
+  border: 1px #3d3d3d solid;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  margin: auto;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.box-photo7 > img {
+  width: 90%;
   border: 1px #3d3d3d solid;
   padding: 0.5rem;
   cursor: pointer;
@@ -141,6 +189,8 @@ li {
   border: 1px #3d3d3d solid;
   padding: 0.5rem;
   position: center;
+  position: relative;
+  bottom: 1125px;
 }
 
 .footer {
@@ -150,6 +200,8 @@ li {
   height: 20vh;
   border: 1px #3d3d3d solid;
   padding: 0.5rem;
+  position: relative;
+  bottom: 1125px;
 }
 
 .zone:hover {
@@ -188,4 +240,22 @@ li {
   padding: 0.5rem;
   grid-area: copyright;
   text-align: center;
+  position: relative;
+  bottom: 775px;
+}
+#front-end{
+  position: relative;
+  bottom: 1075px;
+}
+#back-end{
+  position: relative;
+  bottom: 1075px;
+}
+#Web{
+position: relative;
+  bottom: 1075px;
+}
+#about{
+  position: relative;
+  bottom: 1085px;
 }
